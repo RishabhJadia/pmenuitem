@@ -10,18 +10,21 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         html, body {
             height: 100%;
-            overflow: hidden; /* Prevent scrolling */
             font-family: Arial, sans-serif;
         }
+
         body {
             background: linear-gradient(to bottom right, #1e1e1e, #444);
             display: flex;
-            align-items: center;
             justify-content: center;
             color: #fff;
+            overflow-y: auto; /* Enable vertical scrolling for body */
+            padding: 20px;
         }
+
         .menu-container {
             background-color: rgba(0, 0, 0, 0.85);
             padding: 20px;
@@ -29,25 +32,33 @@
             width: 90%;
             max-width: 500px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            margin: auto;
+            overflow-y: auto; /* Allow scrolling within the container */
+            max-height: 90vh; /* Limit height to prevent overflow outside viewport */
         }
+
         h1 {
             text-align: center;
             color: #ffd700;
             margin-bottom: 20px;
         }
+
         .menu-section {
             margin-bottom: 15px;
         }
+
         h2 {
             color: #ff7f50;
             border-bottom: 1px solid #ffd700;
             padding-bottom: 5px;
             margin-bottom: 10px;
         }
+
         ul {
             list-style-type: none;
             padding-left: 10px;
         }
+
         li {
             padding: 5px 0;
         }
